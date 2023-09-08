@@ -23,9 +23,10 @@ console.log(a);
 
 // operadores relacionales 
 
-console.log(10 10);
-console.log(10 10);
-console.log(10 10);
+console.log(10 > 10);
+console.log(10 >= 10);
+console.log(10 < 10);
+console.log(10 <= 10);
 console.log(10 !== 10);
 console.log(10 == 10);
 
