@@ -36,6 +36,7 @@ mayuscula('hola')
 const minuscula =
 
 // Dos o mas parametros y con retorno
+
 const fullName = (firstName, lastName) => {
     return firstName + '' + lastName;
 }
@@ -47,6 +48,26 @@ const duplica = num => num * 2;
 const doble = duplica(36);
 console.log(doble);
 
-/*function duplica(num){
+/* function duplica(num){
     return num * 2;
-}*/
+}
+*/
+
+// Funciones con parametros opcinales
+
+const welcomeToMexico = (user = 'Invitado') => {
+    console.log('Bienvenido a Mexico ${ user }');
+}
+
+welcomeToMexico();
+welcomeToMexico("Batman");
+
+// parametros con nombre 
+const welcomeToUtt = (user = 'Invitado',
+                    city = 'Mexico' ) => {
+         console.log('Bienvenido ${ user } de $ {city}')
+                    } 
+
+welcomeToUtt();
+welcomeToUtt('Bruce Wayne', 'Gotham');
+welcomeToUtt(city = 'Metropolis', user =' Superman' );
